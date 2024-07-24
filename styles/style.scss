@@ -20,15 +20,27 @@
 
   .header.fixed{
     position: fixed;
-    width: 100%;
-    display: flex;
-    z-index: 999;
-    height: 60px;
-    align-items: center;
-    background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  z-index: 1000;
+  background-color: white;
+  align-items: center;
+  padding: 10px;
   }
 
   
+  .header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .5s;
+
+    padding: 10px;
+    z-index: 999;
+  }
   
   .header-inner {
     height: 50px;
@@ -116,6 +128,7 @@
   /*******************MAIN********************/
   .main {
     height: 500px;
+    padding-bottom: 50px;
   }
   
   .main-video {
@@ -127,7 +140,7 @@
     video {
       position: absolute;
       top: 0;
-      object-fit: none;
+      object-fit: cover;
       left: 0;
       width: 100%;
       height: 500px;
@@ -812,9 +825,16 @@
   
   @media screen and (max-width:1080px){
   
-    .header{
-      padding: 30px;
-    }
+  .header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .5s;
+
+    padding: 10px;
+    z-index: 999;
+  }
   
   
     .header-inner{
@@ -872,7 +892,7 @@
       z-index: -1;
     }
     h1 {
-      margin-top: 30px;
+      margin-top: 130px;
       color: white;
       font-size: 26px;
       font-weight: 500;
@@ -1366,6 +1386,10 @@
   
   /*****************MAIN-THREE*******************/
   
+
+  .main-three.category{
+    margin-top: 100px;
+  }
   
   .main-three-inner {
     padding: 40px;
@@ -1567,6 +1591,18 @@
   /*******************RESPONSIVE-TWO************************/
   
   @media screen and (max-width:768px){
+
+
+    .header{
+      position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .5s;
+
+    padding: 10px;
+    z-index: 999;
+    }
    
   /*******************MAIN********************/
   .main {
@@ -1590,7 +1626,7 @@
       z-index: -1;
     }
     h1 {
-      margin-top: 10px;
+      margin-top: 130px;
       color: white;
       font-size: 20px;
       font-weight: 500;
@@ -1881,6 +1917,7 @@
   /****************MAIN-ONE***********************/
   
   .main-one{
+    margin-top: 100px;
     display: none;
   }
   
@@ -2021,6 +2058,7 @@
   /*****************MAIN-TWO*******************/
   
   .main-two {
+    margin-top: 100px;
     height: 2100px;
   }
   
